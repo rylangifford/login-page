@@ -1,0 +1,13 @@
+# Title for the login page
+st.title("Style Me Login")
+
+# Username and password input fields
+username = st.text_input("Username")
+password = st.text_input("Password", type="password")
+
+# Login button
+if st.button("Login"):
+    if username and password:
+        st.success("Login successful!")
+    else:
+        st.error("Please enter both username and password.")
